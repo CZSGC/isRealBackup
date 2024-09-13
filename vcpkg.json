@@ -1,0 +1,13 @@
+{
+  "name": "isrealengine",
+  "version-string": "0.0.1",
+  "license": "MIT",
+  "dependencies": [
+    "vulkan",
+    "nlohmann-json",
+    "glm",
+    "glfw3",
+    "tinygltf",
+    "vulkan-memory-allocator"
+  ]
+}

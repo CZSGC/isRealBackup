@@ -1,0 +1,126 @@
+﻿{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 19,
+        "patch": 0
+      },
+    "configurePresets": [
+        {
+            "name": "windows-debug",
+            "hidden": false,
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}/build/windows-debug",
+            "cacheVariables": {
+              "CMAKE_BUILD_TYPE": "Debug",
+              "CMAKE_CXX_STANDARD": "20",
+              "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+              "CMAKE_CXX_EXTENSIONS": "OFF",
+              "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+              "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+          },
+          {
+            "name": "windows-release",
+            "hidden": false,
+            "generator": "Visual Studio 17 2022",
+            "binaryDir": "${sourceDir}/build/windows-release",
+            "cacheVariables": {
+              "CMAKE_BUILD_TYPE": "Release",
+              "CMAKE_CXX_STANDARD": "20",
+              "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+              "CMAKE_CXX_EXTENSIONS": "OFF",
+              "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+              "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+          },
+          {
+            "name": "linux-debug",
+            "hidden": false,
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/linux-debug",
+            "cacheVariables": {
+              "CMAKE_BUILD_TYPE": "Debug",
+              "CMAKE_CXX_STANDARD": "20",
+              "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+              "CMAKE_CXX_EXTENSIONS": "OFF",
+              "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+              "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+          },
+          {
+            "name": "linux-release",
+            "hidden": false,
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/linux-release",
+            "cacheVariables": {
+              "CMAKE_BUILD_TYPE": "Release",
+              "CMAKE_CXX_STANDARD": "20",
+              "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+              "CMAKE_CXX_EXTENSIONS": "OFF",
+              "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+              "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+          },
+          {
+            "name": "macos-debug",
+            "hidden": false,
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/macos-debug",
+            "cacheVariables": {
+              "CMAKE_BUILD_TYPE": "Debug",
+              "CMAKE_CXX_STANDARD": "20",
+              "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+              "CMAKE_CXX_EXTENSIONS": "OFF",
+              "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+              "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+          },
+          {
+            "name": "macos-release",
+            "hidden": false,
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/macos-release",
+            "cacheVariables": {
+              "CMAKE_BUILD_TYPE": "Release",
+              "CMAKE_CXX_STANDARD": "20",
+              "CMAKE_CXX_STANDARD_REQUIRED": "ON",
+              "CMAKE_CXX_EXTENSIONS": "OFF",
+              "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+              "CMAKE_INSTALL_PREFIX": "${sourceDir}/install"
+            }
+          }
+        ],
+        "buildPresets": [
+          {
+            "name": "debug-windows",
+            "hidden": false,
+            "configurePreset": "windows-debug"
+          },
+          {
+            "name": "release-windows",
+            "hidden": false,
+            "configurePreset": "windows-release"
+          },
+          {
+            "name": "debug-linux",
+            "hidden": false,
+            "configurePreset": "linux-debug"
+          },
+          {
+            "name": "release-linux",
+            "hidden": false,
+            "configurePreset": "linux-release"
+          },
+          {
+            "name": "debug-macos",
+            "hidden": false,
+            "configurePreset": "macos-debug"
+          },
+          {
+            "name": "release-macos",
+            "hidden": false,
+            "configurePreset": "macos-release"
+          }
+    ]
+}
